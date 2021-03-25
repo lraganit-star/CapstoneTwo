@@ -9,3 +9,5 @@ This data set describes two different scans of an MRI of dimentia patients. I wo
 https://www.kaggle.com/jboysen/mri-and-alzheimers
 
 ## Proposal 3
+There are multiple different images of both pictures and paintings. I would use a neural network to see if I can train a computer to tell the differences between the two. 
+https://www.kaggle.com/iiplutocrat45ii/painting-vs-photograph-classification-dataset
