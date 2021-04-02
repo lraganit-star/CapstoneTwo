@@ -24,11 +24,7 @@ To make the tumor stand out compared to that of the rest of the soft tissue of t
 Compared to malignant tumors, benign tumors are not grow and invade surrounding tissues. However, they are still harmful to the patient because it can compress surrounding brain tissue and cause many problems consisting of, but limited to, vision, hearing, and balance dificulties. 
 
 
-## Creating the Models
-
-Three different neural networks were used to train the MRIs. 
-
-### Building a brain
+## Building a brain
 Neural networks are composed of 5 layers (not including the input or output layer). These are:
 
 1. Convolutional Layer: the purpose of this layer is to extract the features from the input data (MRIs). This will give us a feature map in order to get the information about the different layers of the image.
@@ -61,7 +57,7 @@ GoogleNet = 0.907 (test accuracy), 0.251 (test score)
 - hardest neural network out of the four to build
 
 ### LeNet 5 Model
-![](images/lenet_arch.png)
+![](images/lenet_arch.png){:height="200px" width="500px"}
 LeNet 5 = 0.944 (test accuracy), 0.217 (test score)
 ![](images/lenet_model.png)
 - each epoch took about 6 minutes to run
