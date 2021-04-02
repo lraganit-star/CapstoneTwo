@@ -43,22 +43,26 @@ Neural networks are composed of 5 layers (not including the input or output laye
 
 ## Results
 
+### Basic Sequential Model
 Sequential Model = 0.941 (test accuracy), 0.169 (test score)
 ![](images/sequential_model.png)
 - Accuracy increased a lot around epoch 25
 
+### AlexNet Model
 ![](images/alex_arch.png)
 AlexNet = 0.942 (test accuracy), 0.195 (test score)
 ![](images/alex_model.png)
 - Worked the best in terms of accuracy, but not by much
 
+### GoogleNet Model
 ![](images/google_arch.png)
 GoogleNet = 0.907 (test accuracy), 0.251 (test score)
 ![](images/google_model.png)
 - hardest neural network out of the four to build
 
+### LeNet 5 Model
 ![](images/lenet_arch.png)
-LeNet5 = 0.944 (test accuracy), 0.217 (test score)
+LeNet 5 = 0.944 (test accuracy), 0.217 (test score)
 ![](images/lenet_model.png)
 - each epoch took about 6 minutes to run
 
