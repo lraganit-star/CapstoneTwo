@@ -1,13 +1,21 @@
 # Neural Network for Neural Tumors
 
-Purpose: Using different neural network models to detect tumors within MRI brain images. 
+According to the American Brain Tumor Association, approximately 80,000 people get diagnosed with a primary brain tumor, half of which are formed from glial cells. Even worse, for metastatic brain tumors have been diagnosed in about 10-30% of cancer patients. Most of these secondary tumors occur in patients ages 3-12 and 40-70 years old.
+
+The placement of where the tumor grows can have different effects on the patient. These include, but are not limited to: behavioral changes, smell or vision loss, paralysis, and muscle weakness.
 
 ## Data
 
-Images have been obtained from kaggle: https://www.kaggle.com/shanan93/brain-mri-segmentation-95-5-accuracy
+Images have been obtained from this kaggle dataset: https://www.kaggle.com/shanan93/brain-mri-segmentation-95-5-accuracy
 
-(Put images of brain here?)
+![](images/mri.png)
+The images that we're going to be using for the models will be of mri slices. MRIs are created by using magnetic and radio frequencies of light in order to get different slices of the brain. 
 
+![](images/tumor.png)
+To make the tumor stand out compared to that of the rest of the soft tissue of the brain, the patient has contrast dye injected into their blood. The tumor indicated in this image would be malignant due to the abnormal shape shown through the mask image. 
+
+![](images/benign.png)
+Compared to malignant tumors, benign tumors are not grow and invade surrounding tissues. However, they are still harmful to the patient because it can compress surrounding brain tissue and cause many problems consisting of, but limited to, vision, hearing, and balance dificulties. 
 
 ## Creating the Models
 
@@ -20,7 +28,7 @@ Neural networks are composed of 5 layers (not including the input or output laye
 
 2. Pooling Layer: in order to make the output from the convolutional layer to be easier for computations, the pooling layer is used to reduce the size of the feature map.
 
-3. Fully Connected Layer
+3. Fully Connected Layer: used to classify the image into a label
 
 4. Dropout: neural networks have a tendency to overfit as it tries to learn more about the input data. This is fixed by adding dropout layers by randomly dropping the neurons used in the connected layer. 
 
