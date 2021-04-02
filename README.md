@@ -9,13 +9,20 @@ The placement of where the tumor grows can have different effects on the patient
 Images have been obtained from this kaggle dataset: https://www.kaggle.com/shanan93/brain-mri-segmentation-95-5-accuracy
 
 ![](images/mri.png)
+
+
 The images that we're going to be using for the models will be of mri slices. MRIs are created by using magnetic and radio frequencies of light in order to get different slices of the brain. 
 
 ![](images/tumor.png)
+
+
 To make the tumor stand out compared to that of the rest of the soft tissue of the brain, the patient has contrast dye injected into their blood. The tumor indicated in this image would be malignant due to the abnormal shape shown through the mask image. 
 
 ![](images/benign.png)
+
+
 Compared to malignant tumors, benign tumors are not grow and invade surrounding tissues. However, they are still harmful to the patient because it can compress surrounding brain tissue and cause many problems consisting of, but limited to, vision, hearing, and balance dificulties. 
+
 
 ## Creating the Models
 
@@ -32,24 +39,25 @@ Neural networks are composed of 5 layers (not including the input or output laye
 
 4. Dropout: neural networks have a tendency to overfit as it tries to learn more about the input data. This is fixed by adding dropout layers by randomly dropping the neurons used in the connected layer. 
 
-5. Activation Function: 
-
-
-ImageDataGenerator
-EarlyStopping
-
+5. Activation Function: Defines the output of the model. The outcome can change according to the activation function that is chosen. 
 
 ## Results
 
 Sequential Model = 0.941 (test accuracy), 0.169 (test score)
 ![](images/sequential_model.png)
 - Accuracy increased a lot around epoch 25
+
+![](images/alex_arch.png)
 AlexNet = 0.942 (test accuracy), 0.195 (test score)
 ![](images/alex_model.png)
 - Worked the best in terms of accuracy, but not by much
+
+![](images/google_arch.png)
 GoogleNet = 0.907 (test accuracy), 0.251 (test score)
 ![](images/google_model.png)
 - hardest neural network out of the four to build
+
+![](images/lenet_arch.png)
 LeNet5 = 0.944 (test accuracy), 0.217 (test score)
 ![](images/lenet_model.png)
 - each epoch took about 6 minutes to run
